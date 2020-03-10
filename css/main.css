@@ -1,0 +1,96 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.container{
+  margin: 0 auto;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: row;
+  /*flex-wrap: wrap; /* wrap, nowrap, wrap-reverse helps to make site represents */ 
+  max-width: 1140px;
+  flex-wrap: wrap;
+  height: 600px;
+}
+
+.box {
+  background-color: pink;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  width: 200px; 
+  flex: 1 1 200px;
+}*/
+.box1{
+  background-color: blue;
+  
+}
+.box2{
+  background-color: purple;
+}
+ .box3{
+  background-color: grey; 
+}
+.box4{
+  background-color: brown;
+}*/
+/* On screens that are 641px wide or less, the background color is blue */
+  .box1 {
+    background-color: pink;
+    color: white;
+  }
+  .box2 {
+    background-color: red;
+    color: white;
+  }
+  @media screen and (max-width: 641px) {
+  .box3 {
+    background-color: grey;
+    color: white;
+  }
+  .box4 {
+    background-color: brown;
+    color: white;
+  }
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 1140px) {
+  .box1 {
+    background-color: blue;
+    color: white;
+  }
+  .box4 {
+    background-color: brown;
+    color: white;
+  }
+}
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 1140px) {
+    .box3, .box4 {
+        
+        color: white;
+        
+        
+    }
+
+}
+
+
+/*ref: https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488*/
+
+@media (min-width: 1281px) {
+
+    .box3, .box4 {
+        display: none;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .box3, .box4 {
+        display: none;
+    }
+}
+
